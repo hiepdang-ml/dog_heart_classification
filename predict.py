@@ -5,7 +5,7 @@ import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
 
-def predict(model: nn.Module, dataloader: DataLoader) -> None:
+def predict(model: nn.Module, dataloader: DataLoader) -> pd.DataFrame:
     model.eval()
 
     filenames = []
